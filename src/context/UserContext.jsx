@@ -5,7 +5,7 @@ const UserContext = createContext()
 
 // create a user provider trhat takes in the children
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState('')
+  const [user, setUser] = useState({})
   // sets up initial value
   useEffect(() => {
     fetchUser()
