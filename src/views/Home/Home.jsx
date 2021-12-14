@@ -3,7 +3,7 @@ import Profile from '../../components/Profile/Profile'
 import { useUser } from '../../context/UserContext'
 
 const Home = () => {
-  const { user, setUser } = useUser()
+  const { user } = useUser()
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     if (user.name) {
